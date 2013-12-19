@@ -1,0 +1,11 @@
+# Directories
+.librarian
+.tmp
+.vagrant
+/puppet/modules/*
+
+# Files
+.DS_Store
+Puppetfile.lock
+/user/*
+
