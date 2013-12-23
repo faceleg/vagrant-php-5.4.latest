@@ -10,9 +10,10 @@ APT_GET=/usr/bin/apt-get
 YUM=/usr/sbin/yum
 if [ ! -x $GIT ]; then
     if [ -x $YUM ]; then
-        yum -q -y install git
+        yum -q -y install git puppet
     elif [ -x $APT_GET ]; then
-        apt-get -q -y install git
+        $APT_GET update --fix-missing
+        $APT_GET -q -y install git puppet
     else
         echo "No package installer available. You may need to install git manually."
     fi
