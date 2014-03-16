@@ -3,7 +3,9 @@
 forge "http://forge.puppetlabs.com"
 
 mod "puppetlabs/stdlib"
-mod "puppetlabs/mysql"
-mod "puppetlabs/apache"
+mod "mysql",
+  :git => "https://github.com/puppetlabs/puppetlabs-mysql.git"
+mod "apache",
+  :git => "https://github.com/puppetlabs/puppetlabs-apache.git"
 mod "php",
   :git => "https://github.com/example42/puppet-php"
