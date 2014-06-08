@@ -10,8 +10,8 @@
 # vagrant plugin install vagrant-hostsupdater
 
 Vagrant::configure("2") do |config|
-  config.vm.box = "Debian Wheezy 7.2 amd64"
-  config.vm.box_url = "https://s3-eu-west-1.amazonaws.com/ffuenf-vagrant-boxes/debian/debian-7.2.0-amd64.box"
+  config.vm.box = "Debian Wheezy 7.3 amd64"
+  config.vm.box_url = "https://dl.dropboxusercontent.com/u/29173892/vagrant-boxes/debian7.3.0-vbox4.3.6-puppet3.4.1.box"
 
   load File.expand_path("./user/directories.pp")
   config.vm.synced_folder $projects, "/srv/www/", :nfs => true
